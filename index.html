@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provence</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="header">
+      <div class="container">
+        <div class="header-nav">
+          <div class="logo">
+            <a href="./index.html">Provence</a>
+          </div>
+
+          <div data-time-btn class="work-time">09:00-23-00</div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div data-modal-time class="fade-block hidden">
+            <div class="modal-window">
+              <div class="time">
+                <button data-close-time class="time-close" type="button">
+                  <img src="./img/icons8-закрыть-24.png" alt="" />
+                </button>
+                <div class="time-title">Время работы</div>
+                <div class="time-watch">Пн 09:00 − 23:00</div>
+                <div class="time-watch">Вт 09:00 − 23:00</div>
+                <div class="time-watch">Ср 09:00 − 23:00</div>
+                <div class="time-watch">Чт 09:00 − 23:00</div>
+                <div class="time-watch">Пт 09:00 − 23:00</div>
+                <div class="time-watch">Вс 09:00 − 23:00</div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-busket-btn class="basket"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!--Навигация-->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./info-cafe.html">
+              <div class="link-btn">О нас</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#breakfast">
+              <div class="link-btn">Завтрак</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#firstmeal">
+              <div class="link-btn">Первые блюда</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hotdeashes"
+              ><div class="link-btn">Горячие блюда</div></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#company"
+              ><div class="link-btn">Блюда на компанию</div></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#salat"
+              ><div class="link-btn">Салаты</div></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hotdrinks"
+              ><div class="link-btn">Горячие напитки</div></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#limonade"
+              ><div class="link-btn">Лимонады 1л</div></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#colddrinks"
+              ><div class="link-btn">Холодные напитки</div></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cofe"
+              ><div class="link-btn">Кофе</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="link-btn" href="./info-cafe.html">О нас</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#breakfast">Завтрак</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#firstmeal">Первые блюда</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#hotdeashes">Горячие блюда</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#company">Блюда на компанию</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#salat">Салаты</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#hotdrinks">Горячие напитки</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#limonade">Лимонады 1л</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#colddrinks">Холодные напитки</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="nav-link" href="#cofe">Кофе</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="container">
+        <div id="breakfast" class="title">Завтрак</div>
+
+        <!--Карты с едой-->
+        <div class="dishes">
+          <div data-modal-button="modal-1" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Крууасан с семгой</div>
+
+              <div class="card-suptitle">
+                (круассан классический, филе семги, огурцы, салатные листья,
+                плавленный сыр)
+              </div>
+
+              <div class="card-price">1500 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-1" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="01"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-2" class="card-dishes">
+            <img src="./img/IMG_8008.DNG" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div id="product-name" class="card-title">Круассан с курицей</div>
+
+              <div class="card-suptitle">
+                (круассан классический, куриное филе, салатные листья, огурцы,
+                помидор, соус)
+              </div>
+
+              <div class="card-price">1200 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-2" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="02"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman.jpg"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-3" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Круассан с капрезе</div>
+
+              <div class="card-suptitle">
+                (круассан классический, моцарелла гальбани, соус песто, помидор,
+                салатные листья)
+              </div>
+
+              <div class="card-price">1200 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-3" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="03"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-4" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Рисовая каша</div>
+
+              <div class="card-suptitle">(рис, молоко)</div>
+
+              <div class="card-price">700 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-4" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="04"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-5" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Завтрак «Прованс»</div>
+
+              <div class="card-suptitle">
+                (яйцо, охотничьи колбаски, кетчуп)
+              </div>
+
+              <div class="card-price">1500 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-5" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="05"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="firstmeal" class="title">Первые блюда</div>
+
+        <div class="dishes">
+          <div data-modal-button="modal-6" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Лапша по домашнему</div>
+
+              <div class="card-suptitle"></div>
+
+              <div class="card-price">1000 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-6" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="06"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-7" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Борщ</div>
+
+              <div class="card-suptitle"></div>
+
+              <div class="card-price">1100 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-7" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="07"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-8" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Пельмени</div>
+
+              <div class="card-suptitle"></div>
+
+              <div class="card-price">1200 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-8" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="08"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="ссылка на картинку которая соответствует товару"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-9" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Солянка</div>
+
+              <div class="card-suptitle"></div>
+
+              <div class="card-price">1200 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-9" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="09"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="hotdeashes" class="title">Горячие блюда</div>
+
+        <div class="dishes">
+          <div data-modal-button="modal-10" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Дапанджи</div>
+
+              <div class="card-suptitle">
+                (окорочка, картофель, полугорький перец, тесто для дапанджи,
+                соевый соус, лук)
+              </div>
+
+              <div class="card-price">1400 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-10" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="10"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-11" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Манты (6 штук)</div>
+
+              <div class="card-suptitle">(фарш из говядины, лук, тесто)</div>
+
+              <div class="card-price">1400 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-11" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="11"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-12" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Фри с мясом</div>
+
+              <div class="card-suptitle">(говядина, фри, лук, соевый соус)</div>
+
+              <div class="card-price">1800 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-12" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="12"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-13" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Гуйру лагман</div>
+
+              <div class="card-suptitle">
+                (говядина, полугорький перец, пекинская капуста, сельдерей,
+                тесто на лагман)
+              </div>
+
+              <div class="card-price">1500 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-13" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="13"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-14" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Шашлык лагман</div>
+
+              <div class="card-suptitle">
+                (говядина, полугорький перец, огурцы, лук, сельдерей, тесто на
+                лагман)
+              </div>
+
+              <div class="card-price">1600 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-14" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="14"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-15" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Цомян</div>
+
+              <div class="card-suptitle">
+                (говядина, болгарский перец, лук, сельдерей, соевый соус,
+                чеснок, тесто для цомяна)
+              </div>
+
+              <div class="card-price">1600 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-15" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="15"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-16" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Мясо по тайски</div>
+
+              <div class="card-suptitle">
+                (говядина, болгарский перец, пекинская капуста, соевый соус,
+                лук, огурцы, гарнир)
+              </div>
+
+              <div class="card-price">1700 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-16" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="16"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-17" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Голубцы</div>
+
+              <div class="card-suptitle">(фарш из говядины, рис, капуста)</div>
+
+              <div class="card-price">1500 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-17" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="17"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-18" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Котлеты</div>
+
+              <div class="card-suptitle">(фарш из говядины, гарнир)</div>
+
+              <div class="card-price">1500 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-18" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="18"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-19" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Стейк семги</div>
+
+              <div class="card-suptitle">(семга, сливочный соус, гарнир)</div>
+
+              <div class="card-price">3500 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-19" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="19"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-20" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Колбаски гриль из говядины</div>
+
+              <div class="card-suptitle">
+                (колбаски гриль из говядины, гарнир)
+              </div>
+
+              <div class="card-price">2590 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-20" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="20"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img=""
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-21" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Колбаски гриль из курицы</div>
+
+              <div class="card-suptitle">
+                (колбаски гриль из курицы, гарнир)
+              </div>
+
+              <div class="card-price">2290 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-21" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="21"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-modal-button="modal-22" class="card-dishes">
+            <img src="./img/lagman.jpg" alt="" class="card-img" />
+
+            <div class="card-text">
+              <div class="card-title">Бефстроганов</div>
+
+              <div class="card-suptitle">
+                (говядина, лук, шампиньоны, сметана)
+              </div>
+
+              <div class="card-price">1600 тг</div>
+            </div>
+          </div>
+
+          <!--Модальное окно, открывается при клике-->
+          <div id="modal-22" data-modal class="fade-block hidden">
+            <div class="modal-window">
+              <div class="card-modal">
+                <img src="./img/lagman.jpg" alt="" class="card-img-modal" />
+
+                <button data-modal-close type="button">
+                  <img
+                    src="./img/icons8-закрыть-50 (1).png"
+                    alt=""
+                    class="close"
+                  />
+                </button>
+
+                <div class="text-modal">
+                  <div id="product-name" class="modal-title">
+                    Крууасан с семгой
+                  </div>
+
+                  <div class="modal-suptitle">
+                    (круассан классический, филе семги, огурцы, салатные листья,
+                    плавленный сыр)
+                  </div>
+
+                  <div class="product__quantity"></div>
+
+                  <div id="product-price" class="modal-price">1500 тг</div>
+
+                  <button
+                    data-sb-id-or-vendor-code="22"
+                    data-sb-product-name="Крууасан с семгой"
+                    data-sb-product-price="1500"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="./img/lagman"
+                    type="button"
+                    id="add-to-cart"
+                    class="modal-btn"
+                  >
+                    Добавить к заказу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer-title">Контакты</div>
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://api.whatsapp.com/send?phone=+7 776 459 4430"
+                ><img src="./img/icons8-whatsapp-100.png" alt="Link"
+              /></a>
+            </li>
+
+            <li class="social__item">
+              <a href="https://www.instagram.com/provence_cafe_urzhar/?hl=ru"
+                ><img src="./img/./icons8-instagram-100.png" alt="Link"
+              /></a>
+            </li>
+          </ul>
+
+          <div class="copiright">
+            <p>© 2023 Provence</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <!--Библиотека jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+
+    <div class="smart-basket__wrapper"></div>
+
+    <script src="./smartbasket/js/smartbasket.min.js"></script>
+
+    <script>
+      $(function () {
+        $(".smart-basket__wrapper").smbasket({
+          productElement: "card-modal",
+          buttonAddToBasket: "modal-btn",
+          productPrice: "product__price-number",
+          productSize: "product__size-element",
+
+          productQuantityWrapper: "product__quantity",
+          smartBasketMinArea: "basket",
+          countryCode: "+7",
+          smartBasketCurrency: "₸",
+          smartBasketMinIconPath: "./smartbasket/img/shopping-basket-wight.svg",
+
+          agreement: {
+            isRequired: true,
+            isChecked: true,
+            isLink: "https://artstranger.ru/privacy.html",
+          },
+          nameIsRequired: false,
+        });
+      });
+    </script>
+  </body>
+</html>
